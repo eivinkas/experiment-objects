@@ -4,6 +4,9 @@ const version = '0.0.1'
 // Dependencies: jspsych.js, jspsych-psychophysics.js
 
 function getMask() {
+  
+  console.log('mask function load : OK)
+  
   let maskObject = function (dir = Math.random() * 2 * Math.PI) {
     ;(this.obj_type = 'manual'),
       (this.generatorName = 'checkerMask'),
