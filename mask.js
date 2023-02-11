@@ -1,11 +1,8 @@
-const version = '0.0.4'
+const version = '0.0.5'
 
+// In development
 // Description: Creates a mask object for the jsPsych plugin
 // Dependencies: jspsych.js, jspsych-psychophysics.js
-
-let test1 = function () {
-  console.log('test1 OK')
-}
 
 let getMask = function (config) {
   console.log('mask function load : OK')
