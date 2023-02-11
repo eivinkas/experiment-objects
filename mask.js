@@ -1,4 +1,4 @@
-const version = '0.0.1'
+const version = '0.0.2'
 
 // Description: Creates a mask object for the jsPsych plugin
 // Dependencies: jspsych.js, jspsych-psychophysics.js
