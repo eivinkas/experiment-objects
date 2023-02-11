@@ -1,3 +1,5 @@
+const version = '0.0.1'
+
 dotmaskTrial = function (
   focus_obj,
   fixation_obj,
