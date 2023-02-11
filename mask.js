@@ -3,14 +3,13 @@ const version = '0.0.3'
 // Description: Creates a mask object for the jsPsych plugin
 // Dependencies: jspsych.js, jspsych-psychophysics.js
 
-let test1 = function() {
-console.log('test1 OK')
+let test1 = function () {
+  console.log('test1 OK')
 }
 
-let getMask = function(config) {
-  
-  console.log('mask function load : OK)
-  
+let getMask = function (config) {
+  console.log('mask function load : OK')
+
   let maskObject = function (dir = Math.random() * 2 * Math.PI) {
     ;(this.obj_type = 'manual'),
       (this.generatorName = 'checkerMask'),
