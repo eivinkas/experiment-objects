@@ -1,4 +1,4 @@
-/* @version 0.0.10 */
+/* @version 0.0.11 */
 
 // In development
 // Description: Creates a mask object for the jsPsych plugin
