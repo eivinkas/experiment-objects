@@ -11,6 +11,9 @@ dotmaskTrial = function (
   mask_obj,
   data_obj,
 ) {
+  
+  console.log('dotmaskTrial loaded: '+version)
+  
   let trial = {
     type: jsPsychPsychophysics,
     stimuli: [focus_obj, fixation_obj, ...item_obj, mask_obj], // These can be referenced using the jsPsych.currentTrial().stimuli array.
