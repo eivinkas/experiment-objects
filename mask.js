@@ -1,4 +1,4 @@
-const version = '0.0.6'
+(typeof version === 'undefined') ? (const version = '0.0.7') : (version = '0.0.7');
 
 // In development
 // Description: Creates a mask object for the jsPsych plugin
