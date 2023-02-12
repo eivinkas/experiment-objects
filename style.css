@@ -1,4 +1,4 @@
-/* @version 0.0.1 */
+/* @version 0.0.2 */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -12,7 +12,7 @@ input[type='number'] {
 }
 
 body {
-  background-color: #aaaaaa;
+  background-color: 'red';
   color: black;
 }
 
