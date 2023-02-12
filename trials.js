@@ -1,5 +1,9 @@
 const version = '0.0.1'
 
+///////////////////////////
+// Complete trial object //
+///////////////////////////
+
 dotmaskTrial = function (
   focus_obj,
   fixation_obj,
