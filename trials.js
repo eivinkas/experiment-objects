@@ -1,4 +1,4 @@
-const version = '0.0.2'
+(typeof version === 'undefined') ? (const version = '0.0.2') : (version = '0.0.2');
 
 ///////////////////////////
 // Complete trial object //
