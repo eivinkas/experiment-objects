@@ -11,9 +11,10 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+
+
 body {
-  background-color: #aaaaaa;
-  color: black;
+  background-color: #a91d1d;
 }
 
 .experimenttrial #answertext {
