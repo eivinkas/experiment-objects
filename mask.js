@@ -1,4 +1,4 @@
-const version = '0.0.8'
+/* @version 1.0.0 */
 
 // In development
 // Description: Creates a mask object for the jsPsych plugin
