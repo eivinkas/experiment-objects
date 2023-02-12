@@ -67,7 +67,6 @@ let getMask = function (config) {
 /////////////////////////////////
 
 let getMaskNoBox = function (config) {
-   console.log('mask function load : version ' + version)
   let maskObject = function (dir = Math.random() * 2 * Math.PI) {
     ;(this.obj_type = 'manual'),
       (this.generatorName = 'checkerMask'),
