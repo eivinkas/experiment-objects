@@ -1,0 +1,39 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: #aaaaaa;
+  color: black;
+}
+
+.experimenttrial #answertext {
+  background-color: rgba(1, 1, 1, 0.5);
+  color: #ffffff;
+  font-weight: bold;
+  width: 45px;
+  height: 30px;
+  font-size: 24px;
+}
+
+.introInstructions {
+  font-size: 30px;
+}
+.textbutton {
+  font-size: 24px;
+}
+
+.textbutton #jspsych-survey-text-next {
+  font-size: 24px;
+}
+
+.textbutton #input-0 {
+  font-size: 24px;
+}
