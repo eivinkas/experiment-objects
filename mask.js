@@ -1,4 +1,4 @@
-// In development
+// In development 
 // Description: Creates a mask object for the jsPsych plugin
 // Dependencies: jspsych.js, jspsych-psychophysics.js
 
