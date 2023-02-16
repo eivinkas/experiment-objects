@@ -102,6 +102,7 @@ let screenCalibration = function (config) {
 }
 
 let browserCheck = function (config) {
+  console.log('browser check ok')
   let browserCheck = {
     type: jsPsychBrowserCheck,
     data: {
