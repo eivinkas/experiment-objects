@@ -22,6 +22,10 @@ let getAge = function (config) {
       inputBox.setAttribute('type', 'number')
       inputBox.setAttribute('required', '')
       inputBox.style.width = '3ch'
+      inputBox.addEventListener('input', function () {
+      if (inputBox.value.length > 2) {
+        inputBox.value = inputBox.value.substring(0, 2)
+      }
     },
     css_classes: ['textbutton'],
   }
