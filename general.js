@@ -1,5 +1,5 @@
 // Age
-let age = function (config) {
+let getAge = function (config) {
   let age = {
     type: jsPsychSurveyText,
     data: {
@@ -28,7 +28,7 @@ let age = function (config) {
   return age
 }
 
-let gender = function (config) {
+let getGender = function (config) {
   let gender = {
     type: jsPsychSurveyMultiChoice,
     data: {
@@ -50,7 +50,7 @@ let gender = function (config) {
   return gender
 }
 
-let screenCalibration = function (config) {
+let getScreenCalibration = function (config) {
   let screenCalibration = {
     type: jsPsychResize,
     item_width: 3 + 3 / 8,
@@ -68,7 +68,7 @@ let screenCalibration = function (config) {
   return screenCalibration
 }
 
-let browserCheck = function (config) {
+let getBrowserCheck = function (config) {
   let browserCheck = {
     type: jsPsychBrowserCheck,
     data: {
