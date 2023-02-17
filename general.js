@@ -3,6 +3,7 @@ let getAge = function (config) {
   let age = {
     type: jsPsychSurveyText,
     data: {
+      trialName: 'age',
       studyID: config.studyID,
       componentID: config.componentID,
       batchID: config.batchID,
@@ -37,6 +38,7 @@ let getGender = function (config) {
   let gender = {
     type: jsPsychSurveyMultiChoice,
     data: {
+      trialName: 'gender',
       studyID: config.studyID,
       componentID: config.componentID,
       batchID: config.batchID,
@@ -64,6 +66,7 @@ let getScreenCalibration = function (config) {
       '<p style="font-size: 30px;">Screen Calibration:</p> <p style="font-size: 24px;"><br>Click and drag the lower right corner of the box until the box is the same size as a credit card held up to the screen.</p>',
     pixels_per_unit: 642 / 6,
     data: {
+      trialName: 'screenCalibration',
       studyID: config.studyID,
       componentID: config.componentID,
       batchID: config.batchID,
@@ -77,6 +80,7 @@ let getBrowserCheck = function (config) {
   let browserCheck = {
     type: jsPsychBrowserCheck,
     data: {
+      trialName: 'browserCheck',
       studyID: config.studyID,
       componentID: config.componentID,
       batchID: config.batchID,

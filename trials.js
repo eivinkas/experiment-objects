@@ -27,7 +27,9 @@ dotmaskTrial = function (
     response_start_time: config.responseStart, // when participant can start responding
     choices: 'NO_KEYS',
     css_classes: ['experimenttrial'],
+    trialName: 'dotmaskTrial',
     save_trial_parameters: {
+      trialName: true,
       rt: true, // Reaction time, on_load_time - submit_time
       response: true,
       answer: true,
