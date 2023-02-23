@@ -69,7 +69,7 @@ dotmaskTrial = function (
         currentTrial = jsPsych.getCurrentTrial()
         currentTrial.submit_time = Math.round(performance.now())
         console.log("2.time shold be here: "+currentTrial.input_show_time)
-        currentTrial.rt = currentTrial.submit_time - currentTrial.input_show_time
+        currentTrial.rt = currentTrial.submit_time - currentTrial.on_load_time - currentTrial.input_show_time // trial_length - input_show_time
         currentTrial.answer = inputValue
         
         currentTrial.response = {
