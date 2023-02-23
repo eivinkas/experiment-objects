@@ -66,14 +66,17 @@ dotmaskTrial = function (
         inputValue = document.getElementById('answertext').value
 
         currentTrial = jsPsych.getCurrentTrial()
-        currentTrial.answer = inputValue
         currentTrial.submit_time = Math.round(performance.now())
+        console.log(currentTrial.input_show_time)
+        currentTrial.rt = currentTrial.submit_time - currentTrial.input_show_time
+        currentTrial.answer = inputValue
+        
         currentTrial.response = {
           answer: inputValue,
           submit_time: Math.round(performance.now()),
           trial_length: Math.round(performance.now() - currentTrial.on_load_time),
         }
-        currentTrial.rt = Math.round(performance.now())-currentTrial.input_show_time
+        
         currentTrial.end_trial() // Cleans up the screen and event listeners and calls jsPsych.finishTrial()
       }
 
