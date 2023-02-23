@@ -61,21 +61,20 @@ dotmaskTrial = function (
 
       // On submit, store the response and end the trial
       //response_form.addEventListener('submit',function(){submitAnswer()})
-      console.log("1.time shold be here: "+jsPsych.getCurrentTrial().input_show_time)
       response_form.onsubmit = function (e) {
         e.preventDefault()
+        let submit_time = Math.round(performance.now())
         inputValue = document.getElementById('answertext').value
 
         currentTrial = jsPsych.getCurrentTrial()
-        currentTrial.submit_time = Math.round(performance.now())
-        console.log("2.time shold be here: "+currentTrial.input_show_time)
-        currentTrial.rt = currentTrial.submit_time - currentTrial.on_load_time - currentTrial.input_show_time // trial_length - input_show_time
+        currentTrial.submit_time = submit_time
+        currentTrial.rt = submit_time - currentTrial.on_load_time - currentTrial.input_show_time // trial_length - input_show_time
         currentTrial.answer = inputValue
         
         currentTrial.response = {
           answer: inputValue,
-          submit_time: Math.round(performance.now()),
-          trial_length: Math.round(performance.now() - currentTrial.on_load_time),
+          submit_time: submit_time,
+          trial_length: submit_time - currentTrial.on_load_time,
         }
         
         currentTrial.end_trial() // Cleans up the screen and event listeners and calls jsPsych.finishTrial()
