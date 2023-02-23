@@ -71,10 +71,9 @@ dotmaskTrial = function (
         currentTrial.response = {
           answer: inputValue,
           submit_time: Math.round(performance.now()),
+          trial_length: Math.round(performance.now() - currentTrial.on_load_time),
         }
-        currentTrial.rt = Math.round(
-          performance.now() - currentTrial.on_load_time,
-        )
+        currentTrial.rt = Math.round(performance.now())-currentTrial.input_show_time
         currentTrial.end_trial() // Cleans up the screen and event listeners and calls jsPsych.finishTrial()
       }
 
@@ -148,7 +147,7 @@ dotmaskTrial = function (
       }
 
       // Record  time that trial finished loading.
-      this.on_load_time = Math.round(performance.now())
+      jsPsych.getCurrentTrial().on_load_time = Math.round(performance.now())
 
       // Function to center the input box on the canvas
       function centerInputbox() {
