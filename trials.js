@@ -30,7 +30,7 @@ dotmaskTrial = function (
     trialName: 'dotmaskTrial',
     save_trial_parameters: {
       trialName: true,
-      rt: true, // Reaction time, on_load_time - submit_time
+      rt: true, // Reaction time, input_show_time - submit_time
       response: true,
       answer: true,
       on_start_time: true, // time that the trial started (on_start)
