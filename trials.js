@@ -61,7 +61,7 @@ dotmaskTrial = function (
 
       // On submit, store the response and end the trial
       //response_form.addEventListener('submit',function(){submitAnswer()})
-      console.log("1.time shold be here: "+currentTrial.input_show_time)
+      console.log("1.time shold be here: "+jsPsych.getCurrentTrial().input_show_time)
       response_form.onsubmit = function (e) {
         e.preventDefault()
         inputValue = document.getElementById('answertext').value
