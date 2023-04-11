@@ -1,4 +1,3 @@
- 
 /* Hide number input arrows */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -37,10 +36,14 @@ body {
   font-size: 24px;
 }
 
-.textbutton [id^=input] {
+.textbutton [id^='input'] {
   font-size: 24px;
 }
 
 .jspsych-btn {
+  font-size: 24px;
+}
+
+.jspsych-survey-likert-opts {
   font-size: 24px;
 }
