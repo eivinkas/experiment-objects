@@ -49,8 +49,7 @@ body {
 }
 
 .jspsych-survey-likert-statement {
-  display: block;
-  font-size: 26px;
-  padding-top: 51px;
-  margin-bottom: 100px;
+  font-size: 26px !important;
+  padding-top: 51px !important;
+  margin-bottom: 100px !important;
 }
