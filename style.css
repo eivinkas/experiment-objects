@@ -47,3 +47,10 @@ body {
 .jspsych-survey-likert-opts {
   font-size: 24px !important;
 }
+
+.jspsych-survey-likert-statement {
+  display: block;
+  font-size: 26px;
+  padding-top: 51px;
+  margin-bottom: 100px;
+}
