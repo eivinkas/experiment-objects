@@ -19,6 +19,7 @@ let getAge = function (config) {
       },
     ],
     on_load: function () {
+      resize_off()
       let inputBox = document.getElementById('input-0')
       inputBox.setAttribute('type', 'number')
       inputBox.setAttribute('required', '')
@@ -52,6 +53,9 @@ let getGender = function (config) {
         required: true,
       },
     ],
+    on_load: function () {
+      resize_off()
+    },
     css_classes: ['textbutton'],
   }
   return gender
