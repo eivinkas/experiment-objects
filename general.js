@@ -92,3 +92,15 @@ let getBrowserCheck = function (config) {
   }
   return browserCheck
 }
+
+// Resize
+function resize_off() {
+  scale_factor = 1
+  document.getElementById('jspsych-content').style.transform =
+    'scale(' + scale_factor + ')'
+}
+
+function resize_on(scale_factor) {
+  document.getElementById('jspsych-content').style.transform =
+    'scale(' + scale_factor + ')'
+}
