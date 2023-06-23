@@ -72,6 +72,9 @@ let getScreenCalibration = function (config) {
       batchID: config.batchID,
       workerID: config.workerID,
     },
+    on_finish: function (data) {
+      scale_factor = data.scale_factor
+    },
   }
   return screenCalibration
 }
